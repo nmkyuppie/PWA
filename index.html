@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Code</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <link rel="manifest" href="./manifest.json">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="script.js"></script>
+    </head>
+    <body class="brown darken-4" onload="registerSW()">
+        <nav class="brown darken-2">
+            <div class="nav-wrapper">
+              <a href="#" class="brand-logo" style="font-size: 1rem;">Speech to Text</a>
+            </div>
+          </nav>
+        <div class="container ">
+            <div class="row">
+                <div class="card-panel orange darken-2 col s10 offset-s1 m6 offset-m3" align="center" style="padding:20px;">
+                    <textarea id="textArea" class="materialize-textarea white-text" placeholder="Say something..." style="border-bottom:1px dashed #fff; height:100px !important"></textarea>
+                    <button id="mic" class="btn waves-effect waves-light brown white-text">
+                        <i class="material-icons center">mic</i>
+                    </button>
+                </div>
+            </div>
+          </div>
+    </body>
+</html>
